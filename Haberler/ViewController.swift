@@ -17,9 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         rates()
-        
     }
-
     func rates () {
         
     let url = URL (string: "https://api.hurriyet.com.tr/v1/articles?apikey=05d0ea935a3a43e6b2aa9b5c018b3675")
