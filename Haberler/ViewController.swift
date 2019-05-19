@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     var titleNews = [String] ()
     var urlNews = [String] ()
+    var urlImage = [String]()
     //let apikey = "05d0ea935a3a43e6b2aa9b5c018b3675"
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,12 +40,18 @@ class ViewController: UIViewController {
                     
                      DispatchQueue.main.async {
                         // print(jSONResult)
-                        for ids in jSONResult {
-                            self.titleNews.append(ids["Title"]! as! String)
-                            self.urlNews.append(ids["Url"]! as! String)
+                        for data in jSONResult {
+    
+                            let files = data["Files"] as! Array<AnyObject>
+                            let fileUrl = files[0] as! Dictionary<String, AnyObject>
+                            self.urlImage.append(fileUrl["FileUrl"] as! String)
+                            self.urlNews.append(data["Url"]! as! String)
+                            self.titleNews.append(data["Title"]! as! String)
+                            
                         }
-                        print(self.titleNews)
-                        print(self.urlNews)
+                        //print(self.urlImage)
+                       // print(self.titleNews)
+                        //print(self.urlNews)
                     }
                 }catch {
                     
