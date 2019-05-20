@@ -27,13 +27,13 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         super.viewDidLoad()
         
         
-        
         scrollView.delegate = self
         rates()
         
         //        Sayfa belirteçlerinin başlangıç ayarı
         
-        pageController.numberOfPages = slides.count
+        pageController.numberOfPages = 10
+        
         pageController.currentPage = 0
        
         
@@ -43,6 +43,8 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         //        Dikey kaydırmayı devre dışı bırakmak için
         
         self.scrollView.contentSize.height = 1.0
+        
+    
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView)
@@ -52,18 +54,18 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         pageController.currentPage = Int(pageIndex)
         //        Dikey durum
         
-        let maximumHorizontalOffset: CGFloat = scrollView.contentSize.width - scrollView.frame.width
-        let currentHorizontalOffset: CGFloat = scrollView.contentOffset.x
+       // let maximumHorizontalOffset: CGFloat = scrollView.contentSize.width - scrollView.frame.width
+        //let currentHorizontalOffset: CGFloat = scrollView.contentOffset.x
         //        Yatay durum
-        let maximumVerticalOffset: CGFloat = scrollView.contentSize.height - scrollView.frame.height
-        let currentVerticalOffset: CGFloat = scrollView.contentOffset.y
+        //let maximumVerticalOffset: CGFloat = scrollView.contentSize.height - scrollView.frame.height
+        //let currentVerticalOffset: CGFloat = scrollView.contentOffset.y
         //        Yatay ve dikey olarak kaçıncı scrollView'de olduğumuzu anlamak için bulunan view / maximum view
-        let percentageHorizontalOffset: CGFloat = currentHorizontalOffset / maximumHorizontalOffset
-        let percentageVerticalOffset: CGFloat = currentVerticalOffset / maximumVerticalOffset
+       // let percentageHorizontalOffset: CGFloat = currentHorizontalOffset / maximumHorizontalOffset
+       // let percentageVerticalOffset: CGFloat = currentVerticalOffset / maximumVerticalOffset
         
-        let percentOffset: CGPoint = CGPoint(x: percentageHorizontalOffset, y: percentageVerticalOffset)
+        //let percentOffset: CGPoint = CGPoint(x: percentageHorizontalOffset, y: percentageVerticalOffset)
         
-        if(percentOffset.x > 0 && percentOffset.x <= 0.25)
+        /*if(percentOffset.x > 0 && percentOffset.x <= 0.25)
         {
             slides[0].imageView.transform = CGAffineTransform(scaleX: (0.25-percentOffset.x)/0.25, y: (0.25-percentOffset.x)/0.25)
             
@@ -95,7 +97,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
             slides[4].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/1, y: percentOffset.x/1)
             
         
-        }
+        }*/
     }
     
     
