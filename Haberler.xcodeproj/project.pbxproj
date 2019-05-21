@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F179EA0BAF672BA3809E6BB /* Pods_Haberler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9A81D7485DF2A55B24CA5C /* Pods_Haberler.framework */; };
+		8F0439FE2294481300A0C4DD /* NewsListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0439FD2294481300A0C4DD /* NewsListDelegate.swift */; };
 		8F137E8822936BF9006F0DFD /* ScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F137E8722936BF9006F0DFD /* ScrollView.xib */; };
 		8FC364842290C64A005F0ADA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC364832290C64A005F0ADA /* AppDelegate.swift */; };
 		8FC364862290C64A005F0ADA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC364852290C64A005F0ADA /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		1C9A81D7485DF2A55B24CA5C /* Pods_Haberler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Haberler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BA094BA26E750A876DD25C0 /* Pods-Haberler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haberler.debug.xcconfig"; path = "Target Support Files/Pods-Haberler/Pods-Haberler.debug.xcconfig"; sourceTree = "<group>"; };
+		8F0439FD2294481300A0C4DD /* NewsListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListDelegate.swift; sourceTree = "<group>"; };
 		8F137E8722936BF9006F0DFD /* ScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollView.xib; sourceTree = "<group>"; };
 		8FC364802290C64A005F0ADA /* Haberler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haberler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC364832290C64A005F0ADA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				8FC3648C2290C64C005F0ADA /* LaunchScreen.storyboard */,
 				8FC3648F2290C64C005F0ADA /* Info.plist */,
 				8FC3649F2291BFDC005F0ADA /* scrollProject.xcdatamodeld */,
+				8F0439FD2294481300A0C4DD /* NewsListDelegate.swift */,
 			);
 			path = Haberler;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0439FE2294481300A0C4DD /* NewsListDelegate.swift in Sources */,
 				8FC364A12291BFDC005F0ADA /* scrollProject.xcdatamodeld in Sources */,
 				8FC364862290C64A005F0ADA /* ViewController.swift in Sources */,
 				8FC3649822919797005F0ADA /* ScrollVC.swift in Sources */,

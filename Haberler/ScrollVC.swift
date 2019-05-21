@@ -14,13 +14,20 @@ class ScrollVC: UIView {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var explanationLabel: UILabel!
+    @IBOutlet weak var urlLabel: UILabel!
     
-    var news = [String] ()
+    weak var delegate: NewsListDelegate?
     
+    public func configure() {
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.gestureRecognizerTapped(_:)))
+        gestureRecognizer.numberOfTapsRequired = 1
+        self.imageView.isUserInteractionEnabled = true
+        self.imageView.addGestureRecognizer(gestureRecognizer)
+    }
     
-    
-    
-    
+    @objc func gestureRecognizerTapped(_ sender: Any) {
+        self.delegate?.newsTapped(imageUrl: self.urlLabel.text ?? "")
+    }
     
     
     

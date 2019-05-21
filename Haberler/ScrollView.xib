@@ -37,6 +37,13 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="urlLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oi3-n7-MAn">
+                    <rect key="frame" x="186" y="438" width="62" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -56,6 +63,7 @@
                 <outlet property="explanationLabel" destination="5yh-Vj-VEk" id="gO5-6j-4cg"/>
                 <outlet property="imageView" destination="HkN-kJ-11t" id="XIJ-gR-8aI"/>
                 <outlet property="titleLabel" destination="rhj-cY-fuW" id="rZZ-Gm-N1T"/>
+                <outlet property="urlLabel" destination="oi3-n7-MAn" id="W59-1c-IHW"/>
             </connections>
             <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
         </view>
