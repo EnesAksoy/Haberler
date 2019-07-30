@@ -16,7 +16,6 @@
 		8FC3648B2290C64C005F0ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC3648A2290C64C005F0ADA /* Assets.xcassets */; };
 		8FC3648E2290C64C005F0ADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC3648C2290C64C005F0ADA /* LaunchScreen.storyboard */; };
 		8FC3649822919797005F0ADA /* ScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3649722919797005F0ADA /* ScrollVC.swift */; };
-		8FC364A12291BFDC005F0ADA /* scrollProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3649F2291BFDC005F0ADA /* scrollProject.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 		8FC3648D2290C64C005F0ADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FC3648F2290C64C005F0ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FC3649722919797005F0ADA /* ScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVC.swift; sourceTree = "<group>"; };
-		8FC364A02291BFDC005F0ADA /* scrollProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = scrollProject.xcdatamodel; sourceTree = "<group>"; };
 		BEA6C0F4DDA8AB5AA50C6E23 /* Pods-Haberler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Haberler.release.xcconfig"; path = "Target Support Files/Pods-Haberler/Pods-Haberler.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,13 +79,12 @@
 				8FC364832290C64A005F0ADA /* AppDelegate.swift */,
 				8FC364852290C64A005F0ADA /* ViewController.swift */,
 				8FC3649722919797005F0ADA /* ScrollVC.swift */,
+				8F0439FD2294481300A0C4DD /* NewsListDelegate.swift */,
 				8F137E8722936BF9006F0DFD /* ScrollView.xib */,
 				8FC364872290C64A005F0ADA /* Main.storyboard */,
 				8FC3648A2290C64C005F0ADA /* Assets.xcassets */,
 				8FC3648C2290C64C005F0ADA /* LaunchScreen.storyboard */,
 				8FC3648F2290C64C005F0ADA /* Info.plist */,
-				8FC3649F2291BFDC005F0ADA /* scrollProject.xcdatamodeld */,
-				8F0439FD2294481300A0C4DD /* NewsListDelegate.swift */,
 			);
 			path = Haberler;
 			sourceTree = "<group>";
@@ -222,7 +219,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F0439FE2294481300A0C4DD /* NewsListDelegate.swift in Sources */,
-				8FC364A12291BFDC005F0ADA /* scrollProject.xcdatamodeld in Sources */,
 				8FC364862290C64A005F0ADA /* ViewController.swift in Sources */,
 				8FC3649822919797005F0ADA /* ScrollVC.swift in Sources */,
 				8FC364842290C64A005F0ADA /* AppDelegate.swift in Sources */,
@@ -427,20 +423,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8FC3649F2291BFDC005F0ADA /* scrollProject.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8FC364A02291BFDC005F0ADA /* scrollProject.xcdatamodel */,
-			);
-			currentVersion = 8FC364A02291BFDC005F0ADA /* scrollProject.xcdatamodel */;
-			name = scrollProject.xcdatamodeld;
-			path = ../../scrollProject/scrollProject/scrollProject.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8FC364782290C64A005F0ADA /* Project object */;
 }

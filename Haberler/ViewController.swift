@@ -25,8 +25,6 @@ class ViewController: UIViewController,UIScrollViewDelegate {
     
     var slides = [ScrollVC] ()
     
-    
-    
     let apikey : String = "05d0ea935a3a43e6b2aa9b5c018b3675"
     
     override func viewDidLoad() {
@@ -74,7 +72,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
     
     func sliders() -> [ScrollVC] {
         
-        var slides: [ScrollVC] = []
+        //var slides: [ScrollVC] = []
         for i in 0..<10 {
             let slide:ScrollVC = Bundle.main.loadNibNamed("ScrollView", owner: self, options: nil)?.first as! ScrollVC
             slide.imageView.sd_setImage(with: URL(string: urlImages[i] , relativeTo: nil), placeholderImage: nil)
